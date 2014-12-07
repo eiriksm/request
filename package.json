@@ -40,7 +40,9 @@
     "combined-stream": "~0.0.5"
   },
   "scripts": {
+<<<<<<< Updated upstream
     "test": "npm run lint && node node_modules/.bin/taper tests/test-*.js",
+    "test-browser": "./node_modules/browserify/bin/cmd.js tests/browser/test.js -r https -o tests/browser/test-browser.js && karma start karma.conf.js"
     "lint": "node node_modules/.bin/eslint lib/ *.js tests/ && echo Lint passed."
   },
   "devDependencies": {
@@ -48,5 +50,11 @@
     "rimraf": "~2.2.8",
     "tape": "~3.0.0",
     "taper": "~0.3.0"
+    "browserify": "^5.9.1",
+    "function-bind": "^1.0.0",
+    "karma": "^0.12.21",
+    "karma-mocha": "^0.1.7",
+    "karma-phantomjs-launcher": "^0.1.4",
+    "mocha": "^1.21.4"
   }
 }

@@ -112,8 +112,11 @@ tape('float timeout', function(t) { // should be rounded by setTimeout anyway
     t.end()
   })
 })
+<<<<<<< Updated upstream
 
 tape('cleanup', function(t) {
   s.close()
   t.end()
 })
+=======
+>>>>>>> Stashed changes
